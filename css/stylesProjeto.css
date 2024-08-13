@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+a{
+        text-decoration: none;
+    }
+
+    
+.navigation nav ul{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background: white;
+    z-index: 1;
+}
+.navigation nav ul li{
+    list-style: none;
+}
+.navigation nav ul li a::after{
+    content: "";/* Não tem nada dentro desta função */
+    position: absolute;
+    bottom: 1rem;
+    left: 15%;
+    width: 0;
+    height: 0.2rem;
+    background: rgb(167, 34, 78);
+    transition: all 300ms ease-in-out;
+}
+.navigation nav ul a:hover::after{
+    width: 70%;
+}
+.navigation nav ul a{
+    display: block;
+    padding: 1rem;
+    transition: all 400ms ease-in-out;
+    color: palevioletred;
+    position: relative;
+}
+
+.logo{
+  text-shadow: palevioletred 2px 2px 3px;
+  position: fixed;
+  left: 820px;
+  float: left;
+  font-size: 25px;
+  font-style: italic;
+  z-index: 1;
+}
+.fraselogo{
+    text-shadow: black 1px 1px 1px;
+    word-spacing: 4px;
+    color: palevioletred;
+    position: fixed;
+    left: 1050px;
+    top: 20px;
+    float: left;
+    z-index: 1;
+    width: 50%;
+}
+
+ .diviconeNavegação {
+   position: fixed;
+   left: 1500px;
+   top: 10px;
+   z-index: 1;
+   background: white;
+   font-size: 30px;
+}
+.diviconeNavegação a{
+    color: black;
+}
+
+.navigation nav{
+    height: 60px;
+}
+
+
+header .modelos ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background: whitesmoke;
+}
+header .modelos ul li a{
+    display: block;
+    padding: 10px;
+    color: palevioletred;
+    position: relative;
+}   
+header .modelos ul a::after{
+    content: "";
+    position: absolute;
+    bottom: 0.5rem;
+    left: 10px;
+    width: 0;
+    height: 0.2rem;
+    background: rgb(167, 34, 78);
+    transition: all 300ms ease-in-out;
+}
+header .modelos ul a:hover::after{
+    width: 90%;
+}
+
+
+ .content{
+    margin: 0 auto;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("/imagens/pngtree-abstract-minimal-texture-light-pink-and-glitter-paint-blend-creatively-textured-image_13838417.png");
+    background-size: cover;
+    background-position: center;
+    color: rgb(167, 34, 78); 
+     
+}
+.content-text,  .image img {
+    padding-right: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 600px;
+    min-width: 300px;
+    height: auto;
+}
+h1, h3{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.content h3{
+    position: relative;
+    bottom: 50px;
+    font-size: 25px;
+    line-height: 40px;
+}
+.content h1{
+    position: relative;
+    bottom: 50px;
+    font-size: 50px;
+}
+.content-text .logo{
+    color: black;
+    font-size: 50px;
+    position: relative;
+    bottom: 25px;
+    left: 150px;
+    z-index: 0;
+}
+
+
+.section{
+   flex-flow: column wrap;
+   justify-content: center;
+   min-height: 100vh;
+}
+
+section img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+    margin: 50px;
+}
+section .section h1{
+    margin-top: 50px;
+}
+section .section h2{
+    margin-top: 50px;
+    text-align: center;
+}
+section .section1 h2{
+    text-align: center;
+}
+.modelo-maquiagem, .modelo-cabelo{
+    width: 100%; 
+    max-width: 500px;
+    max-height: 500px;
+    overflow: hidden; 
+}
+.modelos-maquiagens, .modelos-cabelos{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+counter-reset: grid-counter
+}
+
+.modelo-maquiagem, .modelo-cabelo{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+ .modelo-cabelo img{
+    margin: 50px;
+    max-width: 500px;
+    max-height: 500px;
+    transition: all 300ms ease-in-out;
+}
+.modelo-maquiagem img{
+    margin: 50px;
+    max-width: 500px;
+    max-height: 500px;
+    transition: all 300ms ease-in-out; 
+}
+ .modelo-cabelo img:hover{
+    transform: translate(-2%, 2%) scale(1.2) rotate(5deg);
+}
+.modelo-maquiagem img:hover{
+    transform: translate(-2%, 2%) scale(1.2) rotate(5deg);
+}
+
+
+.footer{
+    background-image: url("/imagens/pngtree-abstract-minimal-texture-light-pink-and-glitter-paint-blend-creatively-textured-image_13838417.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+footer img{
+    position: relative;
+    right: 500px;
+    top: 60px;
+    width: 50px;
+    height: 50px;
+}
+footer .logofooter{
+    text-shadow: palevioletred 2px 2px 3px;
+    position: relative;
+    left: 1200px;
+    bottom: 30px;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    font-style: italic;
+}
+footer .footer{
+    position: relative;
+    top: 70px;
+    font-size: 15px;
+}
+
+.instafooter, .inforfooter{
+    position: relative;
+    top: 30px;
+    bottom: 30px;
+} 
+ .close-nav{
+    display: none;
+ }
+
+ 
+ @media(max-width:500px){
+    .content, .modelos-maquiagens, .modelos-cabelos{
+        grid-template-columns: 1fr;
+    }
+.content{
+    padding-left: 50px;
+}
+.content-text, .content-text .logo{
+    width: 450px;
+    padding-left: 20px;
+}
+.content-text .logo{
+  position: relative;
+  left: 60px;
+}
+.image img{
+    width: 500px;
+    padding-right: 150px;
+}
+.nav{
+   bottom: 0; 
+   text-align: center; 
+   display: none;
+}
+.close-nav-label::after{
+    content: "☰";
+    position: fixed;
+    z-index: 2;
+    top: 20px;
+    right: 50px;
+    font-size: 40px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.close-nav:checked~.nav{
+    display: block;
+}
+.close-nav:checked~.close-nav-label::after{
+    content: "X";
+}
+
+.navigation nav ul{
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 150px;
+}
+.navigation nav ul a:hover::after{
+    width: 30%;
+position: absolute;
+left: 170px;
+}
+.navigation{
+   height: 100vh;
+}
+.navigation .logo{
+    margin: 200px 200px 0px;
+    position: static;
+    text-align: center;
+}
+.fraselogo{
+    margin: 100px 0px 0px 90px;
+    position: static;
+    text-align: center;  
+}
+.modelos ul {
+    position: relative;
+    bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+.modelo-maquiagem img, .modelo-cabelo img{
+    margin-left: 100px;
+}
+.footer img{
+    right: auto;
+    top: auto;
+    margin: 10px auto;
+}
+.footer .logofooter{
+    left: auto;
+    bottom: auto;
+    margin: 40px auto;
+}
+}
+
+
+/*@media(min-width:401px)and(max-width:800px){
+    .content, .modelos-maquiagens, .modelos-cabelos{
+        padding-left: 50px;
+        grid-template-columns: 1fr;
+    }
+.content{
+    padding-left: 0px;
+}
+
+.nav{
+   bottom: 0; 
+   text-align: center; 
+   display: none;
+}
+.close-nav-label::after{
+    content: "☰";
+    position: fixed;
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.close-nav:checked~.nav{
+    display: block;
+}
+.close-nav:checked~.close-nav-label::after{
+    content: "X";
+}
+
+.navigation nav ul{
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 150px;
+}
+.navigation nav ul a:hover::after{
+    width: 30%;
+position: absolute;
+left: 170px;
+}
+.navigation{
+   height: 100vh;
+}
+.navigation .logo{
+    margin: 200px 200px 0px;
+    position: static;
+    text-align: center;
+}
+.fraselogo{
+    margin: 100px 0px 0px 120px;
+    position: static;
+    text-align: center;  
+}
+.modelos ul {
+    position: relative;
+    bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+.footer img{
+    right: auto;
+    top: auto;
+    margin: 10px auto;
+}
+.footer .logofooter{
+    left: auto;
+    bottom: auto;
+    margin: 40px auto;
+}
+}
+*/
+
+
+
+
+
