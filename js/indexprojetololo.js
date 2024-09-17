@@ -2,7 +2,7 @@ function formularioLolo () {
     const form = document.querySelector ('.form');
     const resultado = document.querySelector ('.resultado');
 
-    const clientes = [];
+    const clientes = []; // Está vazio, pois o usuario q digita
 
     function recebeEventoForm (evento) {
         evento.preventDefault();
